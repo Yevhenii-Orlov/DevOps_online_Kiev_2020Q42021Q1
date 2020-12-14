@@ -2,7 +2,7 @@
 ##### I cloned the repo from the GitHub service to my machine.
 ##### And I started working locally.
 ##### I created the folders "m1","m1/task1.1" "m2" and move to the /m1/task1.1.
-''$ cd m1/task1.1/''.
+-'$ cd m1/task1.1/'.
 ##### I created the text file readme.txt in 'main' branch and commit it.
 '$ git add .'.
 '$ git commit -m "Create readme.txt"'.
