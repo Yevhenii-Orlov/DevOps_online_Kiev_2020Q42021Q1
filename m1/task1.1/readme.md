@@ -1,3 +1,6 @@
+##### DevOps is a combination of knowledge of administration, programming, knowledge of network, cloud and other technologies for synchronization and coordination over all areas of the development of a large team, but, first of all, it is a methodology, a kind of standardized production cycle-approach.
+DevOps bring stability and control to the development team, testers and admins, which is invaluable when developing complex working systems, as well as a DevOps engineer will create a powerful preventive barrier to the emergence of bugs and communication problems in the team.
+
 ##### After installing GIT on my machine.
 ##### I cloned the repo from the GitHub service to my machine.
 ##### And I started working locally.
