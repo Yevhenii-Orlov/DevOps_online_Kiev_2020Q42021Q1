@@ -9,29 +9,29 @@
 ##### My next step was to create a new branch 'develop' and checkout to it.
 `$ git checkout -b develop`.
 ##### In this branch were created empty index.html file and commit this action.
-`$ vi index.html`
-`$ git add index.html`
-`$ git commit -m "Create index.html"`
+`$ vi index.html`.
+`$ git add index.html`.
+`$ git commit -m "Create index.html"`.
 ##### My next step was to create a new branch 'images' and checkout to it.
-`$ git checkout -b images`
+`$ git checkout -b images`.
 ##### The images folder was created in this branch. 
 ##### An image has been added to it.
 ##### After that the index.html file was changed.
 ##### The changes have been committed.
-`$ mkdir images`
-`$ nano index.html`
-`$ git add index.html`
-`$ git commit -m "Changed index.html"`
+`$ mkdir images`.
+`$ nano index.html`.
+`$ git add index.html`.
+`$ git commit -m "Changed index.html"`.
 ##### My next step was to create a new branch 'styles' and checkout to it.
-`$ git checkout -b styles`
+`$ git checkout -b styles`.
 ##### The styles folder was created in this branch. 
 ##### An styles has been added to it.
 ##### After that the index.html file was changed.
 ##### The changes have been committed.
-`$ mkdir styles`
-`$ nano index.html`
-`$ git add index.html`
-`$ git commit -m "Changed index.html"`
+`$ mkdir styles`.
+`$ nano index.html`.
+`$ git add index.html`.
+`$ git commit -m "Changed index.html"`.
 ##### My next step was to merged images and develop branchs.
 `$ git merge images` - while being on the develop branch.
 ##### My next step was to merged styles and develop branchs. 
