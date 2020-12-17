@@ -22,4 +22,4 @@
 
    Ubuntu Desktop was installed to Oracle VirtualBox hypervisor and called "Ubuntu_20.10_Orlov"
    Virtual machine settings:
-   ![1.1!](/assets/images/philly-magic-gardens.jpg)
+   ![1.1!](C:\Users\YEVHENII\Desktop\Screenshots\Screenshot (2).png)
