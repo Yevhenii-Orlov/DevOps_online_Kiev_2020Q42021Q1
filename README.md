@@ -1,1 +1,0 @@
-# DevOps_online_Kiev_2020Q42021Q1
