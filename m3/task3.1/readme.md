@@ -490,10 +490,28 @@ Movies.sql  MoviesRDS.sql
 
 #### PART 3
 
-11. Creating an Amazon DynamoDB table.
+11. Creating an Amazon DynamoDB table and entering data into an Amazon DynamoDB table.
 
-![](Screenshots/Screenshot%20(103).png)
+![](Screenshots/Screenshot%20(108).png)
 
+![](Screenshots/Screenshot%20(109).png)
 
+12. Query an Amazon DynamoDB table using Scan option.
 
+![](Screenshots/Screenshot%20(111).png)
 
+![](Screenshots/Screenshot%20(112).png)
+
+![](Screenshots/Screenshot%20(113).png)
+
+![](Screenshots/Screenshot%20(114).png)
+
+![](Screenshots/Screenshot%20(115).png)
+
+13. Query an Amazon DynamoDB table using Query option.
+
+![](Screenshots/Screenshot%20(116).png)
+
+![](Screenshots/Screenshot%20(117).png)
+
+![](Screenshots/Screenshot%20(118).png)
