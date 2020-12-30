@@ -1,0 +1,28 @@
+Switch>en
+Switch>enable 
+Switch#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Switch(config)#vl
+Switch(config)#vlan 10
+Switch(config-vlan)#name B1
+Switch(config-vlan)#vlan 20
+Switch(config-vlan)#name B2
+Switch(config-vlan)#vlan 30
+Switch(config-vlan)#name B3
+Switch(config-vlan)#vlan 40
+Switch(config-vlan)#vlan 50
+Switch(config-vlan)#name B5
+Switch(config-vlan)#
+Switch(config-vlan)#end
+Switch#vlan database
+% Warning: It is recommended to configure VLAN from config mode,
+  as VLAN database mode is being deprecated. Please consult user
+  documentation for configuring VTP/VLAN in config mode.
+
+Switch(vlan)#
+%SYS-5-CONFIG_I: Configured from console by console
+vlan 40 name B4
+VLAN 40 modified:
+    Name: B4
+Switch(vlan)#
+Switch#
