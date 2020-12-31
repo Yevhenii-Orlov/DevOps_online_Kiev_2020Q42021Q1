@@ -7,3 +7,9 @@
 #### <a href="https://github.com/Yevhenii-Orlov/DevOps_online_Kiev_2020Q42021Q1/blob/main/m2/task2.2/readme.md" target="_blank">Task 2.2</a>
 
 #### <a href="https://github.com/Yevhenii-Orlov/DevOps_online_Kiev_2020Q42021Q1/blob/main/m3/task3.1/readme.md" target="_blank">Task 3.1</a>
+
+#### <a href="https://github.com/Yevhenii-Orlov/DevOps_online_Kiev_2020Q42021Q1/blob/main/m4/task4.1/readme.md" target="_blank">Task 4.1</a>
+
+#### <a href="https://github.com/Yevhenii-Orlov/DevOps_online_Kiev_2020Q42021Q1/blob/main/m4/task4.2/readme.md" target="_blank">Task 4.2</a>
+
+#### <a href="https://github.com/Yevhenii-Orlov/DevOps_online_Kiev_2020Q42021Q1/blob/main/m4/task4.3/readme.md" target="_blank">Task 4.3</a>
