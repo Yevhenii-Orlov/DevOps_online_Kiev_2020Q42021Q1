@@ -195,6 +195,10 @@ The "findmnt --fstab" command displayed static information about the filesystem.
   
  ![](Screenshots/46.png)
  
+ ![](Screenshots/49.png)
+ 
+ ![](Screenshots/50.png)
+ 
  13. On Linux, the / dev directory contains various special files. These files are called device files. Accessing devices in the Unix world is different from how it is done in other operating systems. Here this is done through a special file that is actually maintained by a driver (part of the Linux kernel) accessing the device. Another less commonly used device file type is pipe.
 
 'fd0' First floppy drive
