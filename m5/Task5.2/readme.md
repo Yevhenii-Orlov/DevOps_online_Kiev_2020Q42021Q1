@@ -136,4 +136,51 @@ The username on the system can be changed using the usermod command. To change t
 
 ![](Screenshots/8.png)	
 
-7. 
+7. What is skell_dir? What is its structure?
+
+Skel is derived from the skeleton because it contains basic structure of home directory. The /etc/skel directory contains files and directories that are automatically copied over to a new user’s when it is created from useradd command. This will ensure that all the users gets same intial settings and environment.
+
+![](Screenshots/9.png)	
+
+The location of /etc/skel can be changed by editing the line that begins with SKEL= in the configuration file /etc/default/useradd. By default this line says SKEL=/etc/skel.
+
+![](Screenshots/10.png)	
+
+8. How to remove a user from the system (including his mailbox)?
+
+A user can be removed from the system using two commands:
+
+	userdel
+		-f, --force - force deletion even if the user is still logged in.
+		-r, --remove - remove the user's home directory and files in the system.
+		-Z - delete all SELinux objects for this user.
+		
+	deluser
+		--system - delete only if it is a system user
+		--backup - back up user files
+		--backup-to - folder for backups
+		--remove-home - remove home folder
+		--remove-all-files - remove all user files in the file system
+		
+![](Screenshots/11.png)
+
+9. What commands and keys should be used to lock and unlock a user account?
+
+The usermod command with a -L flag is a one-stop solution for modifying a user account and houses an option to lock a user account password.
+The command to unlock a user locked this way uses the -U flag.
+
+![](Screenshots/12.png)
+
+10. How to remove a user's password and provide him with a password free login for subsequent password change?
+
+This can be achieved by using passwd command with -d option which deletes already assigned password.
+
+		passwd -d username
+
+![](Screenshots/13.png)
+
+11. Display the extended format of information about the directory, tell about the information columns displayed on the terminal.
+
+		ls -lhai
+
+![](Screenshots/14.png)
