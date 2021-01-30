@@ -180,7 +180,7 @@ As soon as you will run this command it will open an interactive command mode wh
 
 ![](Screenshots/24.png)
 
-#####Colums:
+##### Colums:
 
 * PID: Shows task’s unique process id.
 * PR: Stands for priority of the task.
@@ -193,7 +193,7 @@ As soon as you will run this command it will open an interactive command mode wh
 * NI: Represents a Nice Value of task. A Negative nice value implies higher priority, and positive Nice value means lower priority.
 * %MEM: Shows the Memory usage of task.
 
-#####Keys:
+##### Keys:
 
 * -v - display the version of the program;
 * -b - mode only for data output, the program does not accept interactive commands and is executed until it is terminated manually;
@@ -231,7 +231,7 @@ For example:
 
 12. Display the processes of the specific user using the top command.
 
-#####launch options:
+##### launch options:
 
 * -v - display the version of the program;
 * -b - mode only for data output, the program does not accept interactive commands and is executed until it is terminated manually;
@@ -245,7 +245,7 @@ For example:
 * -p - monitor only processes specified by PID, you can specify multiple PIDs;
 * -u - only display processes running as the specified user.
 
-#####Interactive commands:
+##### Interactive commands:
 
 * h - displays help for the utility;
 * q or Esc - exit top;
@@ -424,18 +424,18 @@ To display all the available signals you can use command option:
 
 		$ kill -l
 		
-####Signals can be specified in three ways:
+#### Signals can be specified in three ways:
 
 - By number (e.g. -5)
 - With SIG prefix (e.g. -SIGkill)
 - Without SIG prefix (e.g. -kill)
 
-#####Note:
+##### Note:
 
 - Negative PID values are used to indicate the process group ID. If you pass a process group ID then all the process within that group will receive the signal.
 - A PID of -1 is very special as it indicates all the processes except kill and init, which is the parent process of all processes on the system.
 
-#####Syntax:
+##### Syntax:
 
 - Terminate process(es):
 
@@ -449,7 +449,7 @@ To display all the available signals you can use command option:
 
 		$ kill {-l | --list[=signal] | -L | --table}
 
-#####Related commands
+##### Related commands
 
 - fuser — Identify processes using files or sockets.
 - killall — Kill processes by name.
@@ -461,7 +461,7 @@ To display all the available signals you can use command option:
 
 17. Commands jobs, fg, bg, nohup. What are they for? Use the sleep, yes command to demonstrate the process control mechanism with fg, bg.
 
-#####bg command
+##### bg command
 
 The processes that have been stopped by some interrupt signal can be continued in the background with bg command.
 The "nautilus" and "tree" process has been stopped with ctrl+z interrupt signal.
@@ -482,7 +482,7 @@ The *bg* command can take the job number as argument. The job number is indicate
 
 In the above example, the job number of nautilus is 1. So now we use this job number to run the job in the background. The % sign is required for indicating the job number.
 
-#####fg command
+##### fg command
 
 The *fg* command is like bg command except that instead of sending a command in the background, it runs them in the foreground and occupies the current terminal and waits for the process to exit.
 
