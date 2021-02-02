@@ -503,18 +503,106 @@ Use the *sleep* command:
 1. Check the implementability of the most frequently used OPENSSH commands in the MS Windows operating system. (Description of the expected result of the commands +
 screenshots: command – result should be presented)
 
+After installing the OpenSSH modul for MS Windows I connected to my laptop on Ubunta using PowerShell. First establishing created a folder in the home directory on Ubuntu.
 
+![](Screenshots/58.png)
 
+![](Screenshots/57.png)
+
+For further passwordless access to the Ubuntu operating system, I generated RSA keys and copied it to a windows device. Later I used the Putty program.
+
+![](Screenshots/59.png)
+
+![](Screenshots/60.png)
+
+![](Screenshots/61.png)
+
+![](Screenshots/62.png)
+
+![](Screenshots/63.png)
+
+Copy RSA key to the windows machine.
+
+![](Screenshots/64.png)
+
+Convert RSA key and use the Putty to conect to the Ubuntu machine  without password.
+
+![](Screenshots/66.png)
+
+![](Screenshots/67.png)
+
+![](Screenshots/68.png)
+
+![](Screenshots/69.png)
+
+![](Screenshots/70.png)
 
 2. Implement basic SSH settings to increase the security of the client-server connection.
 
+In this assignment I used Oracle VirtualBox with Ubuntu Server x64.
 
+I chenged a SSH port to 2882.
 
+![](Screenshots/71.png)
+
+![](Screenshots/72.png)
+
+Create RSA key.
+
+![](Screenshots/75.png)
+
+Send public RSA key to the server machine.
+
+![](Screenshots/76.png)
+
+Add public RSA key to the authorized_keys.
+
+![](Screenshots/80.png)
+
+Edit /etc/ssh/sshd_config file.
+
+ - Chenge ssh port to 2882;
+ - Set PubkeyAuthentification to yes;
+ - Set PasswordAuthentification to no.
+
+![](Screenshots/78.png)
+
+![](Screenshots/79.png)
 
 3. List the options for choosing keys for encryption in SSH. Implement 3 of them.
 
+##### Symmetrical Encryption
 
+Symmetrical encryption is a type of encryption where one key can be used to encrypt messages to the opposite party, and also to decrypt the messages received from the other participant. This means that anyone who holds the key can encrypt and decrypt messages to anyone else holding the key.
 
+SSH can be configured to utilize a variety of different symmetrical cipher systems, including:
+
+- AES; 
+- Blowfish; 
+- 3DES; 
+- CAST128;
+- Arcfour.
+
+##### Asymmetrical Encryption
+
+Asymmetrical encryption is different from symmetrical encryption in that to send data in a single direction, two associated keys are needed. One of these keys is known as the private key, while the other is called the public key.
+
+The public key can be freely shared with any party. It is associated with its paired key, but the private key cannot be derived from the public key. The mathematical relationship between the public key and the private key allows the public key to encrypt messages that can only be decrypted by the private key. This is a one-way ability, meaning that the public key has no ability to decrypt the messages it writes, nor can it decrypt anything the private key may send it.
+
+For OpenSSH, you can generate keys for asymmetric encryption protocols such as:
+
+- DSA;
+- RSA;
+- ECDSA;
+- ED25519.
+
+RSA, DSA, ECDSA implementation.
+
+![](Screenshots/81.png)
+
+![](Screenshots/82.png)
+
+![](Screenshots/83.png)
 
 4. Implement port forwarding for the SSH client from the host machine to the guest Linux virtual machine behind NAT.
 
@@ -522,8 +610,5 @@ screenshots: command – result should be presented)
 
 
 5. Intercept (capture) traffic (tcpdump, wireshark) while authorizing the remote client on the server using ssh, telnet, rlogin. Analyze the result.
-
-
-
 
 
