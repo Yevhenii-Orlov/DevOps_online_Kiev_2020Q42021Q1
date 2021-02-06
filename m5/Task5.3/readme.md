@@ -614,4 +614,12 @@ To the solve this task, I installed Apache2 and opened ports 80 and 443 prelimin
 
 5. Intercept (capture) traffic (tcpdump, wireshark) while authorizing the remote client on the server using ssh, telnet, rlogin. Analyze the result.
 
+Using the Wireshark program, I caught the packets passing over the network between the machines.
 
+![](Screenshots/86.png)
+
+![](Screenshots/87.png)
+
+![](Screenshots/88.png)
+
+The screenshots show that the traffic does not go through the virtual machine 192.168.88.66:80, but from the intermediary machine 192.168.88.58:80 and enters the main machine via port 8585.
