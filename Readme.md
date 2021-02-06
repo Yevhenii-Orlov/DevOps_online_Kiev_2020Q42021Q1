@@ -21,3 +21,5 @@
 #### <a href="https://github.com/Yevhenii-Orlov/DevOps_online_Kiev_2020Q42021Q1/blob/main/m5/Task5.2/readme.md" target="_blank">Task 5.2</a>
 
 #### <a href="https://github.com/Yevhenii-Orlov/DevOps_online_Kiev_2020Q42021Q1/blob/main/m5/Task5.3/readme.md" target="_blank">Task 5.3</a>
+
+#### <a href="https://github.com/Yevhenii-Orlov/DevOps_online_Kiev_2020Q42021Q1/blob/main/m6/Task6.1/readme.md" target="_blank">Task 6.1</a>
