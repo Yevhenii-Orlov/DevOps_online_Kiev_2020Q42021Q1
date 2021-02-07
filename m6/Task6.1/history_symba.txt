@@ -1,0 +1,156 @@
+    1  reboot
+    2  clear
+    3  ifconfig
+    4  sudo nano /etc/network/interfaces 
+    5  reboot
+    6  ifconfig
+    7  ip a
+    8  sudo mf
+    9  sudo mc
+   10  sudo nano /etc/network/interfaces 
+   11  ifconfig
+   12  reboot
+   13  exit
+   14  ping google.com
+   15  ping 192.168.88.135
+   16  exit
+   17  ifconfig
+   18  sudo cp /etc/netplan/00-installer-config.yaml /etc/netplan/00-installer-config.yaml.bak 
+   19  sudo nano /etc/netplan/00-installer-config.yaml
+   20  ifconfig
+   21  sudo nano /etc/netplan/00-installer-config.yaml
+   22  sudo netplan apply 
+   23  clear
+   24  ifconfig
+   25  sudo service --status-all
+   26  ping 10.12.12.2
+   27  clear
+   28  ping 192.168.88.135
+   29  ip a
+   30  ping 192.168.88.135
+   31  clear
+   32  ip a
+   33  ping 192.168.88.135
+   34  clear
+   35  sudo service networking stop
+   36  sudo service networking start
+   37  clear
+   38  sudo ifdown -a
+   39  ifup
+   40  sudo apt install ifupdown
+   41  sudo ifdown -a
+   42  ifconfig
+   43  sudo ifup -a
+   44  clear
+   45  ifconfig
+   46  sudo apt install ifupdown2
+   47  ping google.com
+   48  ping 192.168.88.1
+   49  clear
+   50  ifconfig
+   51  sudo ifdown -a
+   52  sudo ifup -a
+   53  ifconfig
+   54  sudo ifup -a
+   55  ssh 192.168.88.135 -p 2882
+   56  clear
+   57  ifconfig
+   58  sudo service --statuse-all
+   59  sudo service --statuce-all
+   60  sudo service --status-all
+   61  sudo apt install open-ssh
+   62  sudo apt install openssh
+   63  netstat -alt
+   64  sudo service ssh restert
+   65  sudo /etc/init.d/ssh restert
+   66  sudo /etc/init.d/ssh restart
+   67  sudo /etc/init.d/networking restart
+   68  reboot
+   69  exit
+   70  clear
+   71  ifconfig
+   72  ssh 10.12.12.2
+   73  ssh 192.168.88.135
+   74  clear
+   75  iptables
+   76  iptables --help
+   77  clear
+   78  sudo nano /etc/sysctl.conf 
+   79  sudo iptables -t nat -A POSTROUTING -o enp0s3 -j MASQUERADE
+   80  sudo iptables -A FORWARD -i enp0s8 -o enp0s3 -m state --state RELATED,ESTABLISHED -j ACCEPT
+   81  sudo iptables -A FORWARD -i enp0s8 -o enp0s3 -j ACCEPT
+   82  sudo iptables -S
+   83  iptables -L -n
+   84  sudo iptables -L -n
+   85  iptables-presistace
+   86  iptables-persistace
+   87  sudo iptables-persistace
+   88  sudo iptables-persistance
+   89  sudo iptables-persist
+   90  sudo iptables-persistent
+   91  iptables-save > /etc/iptables/rules.v4
+   92  sudo iptables-persistent
+   93  sudo iptables -t nat -A POSTROUTING -o enp0s3 -j MASQUERADE
+   94  sudo iptables -A FORWARD -i enp0s8 -o enp0s3 -m state --state RELATED,ESTABLISHED -j ACCEPT
+   95  sudo iptables -A FORWARD -i enp0s8 -o enp0s3 -j ACCEPT
+   96  sudo iptables-persistent
+   97  iptables -S
+   98  iptables -L
+   99  sudo /etc/init.d/networking restert
+  100  sudo /etc/init.d/networking restart
+  101  clear
+  102  sudo /etc/init.d/networking restart
+  103  ssh 192.168.88.135
+  104  sudo iptables -S
+  105  reboot
+  106  sudo iptables -S
+  107  clear
+  108  ssh 192.168.88.135
+  109  clear
+  110  ifconfig -a
+  111  iptables stop
+  112  sudo ufw
+  113  sudo ufw -s
+  114  sudo ufw --disable
+  115  sudo ufw -disable
+  116  sudo ufw disable
+  117  clear
+  118  ping 8.8.8.8
+  119  clear
+  120  ip a
+  121  clear
+  122  touch text.txt
+  123  nano text.txt 
+  124  clear
+  125  sudo iptables -t nat -A POSTROUTING -o enp0s3 -j MASQUERADE
+  126  sudo iptables -A FORWARD -i enp0s8 -o enp0s3 -m state --state RELATED,ESTABLISHED -j ACCEPT
+  127  sudo iptables -A FORWARD -i enp0s8 -o enp0s3 -j ACCEPT
+  128  sudo iptables -S
+  129  clear
+  130  ip a
+  131  ssh 192.168.88.135
+  132  sudo iptables-persistent
+  133  sudo apt install iptables
+  134  sudo apt update
+  135  sudo iptables-persistent
+  136  iptables-save
+  137  sudo iptables-save
+  138  clear
+  139  reboot
+  140  sudo iptables -S
+  141  sudo iptables -t nat -A POSTROUTING -o enp0s3 -j MASQUERADE
+  142  sudo iptables -A FORWARD -i enp0s8 -o enp0s3 -m state --state RELATED,ESTABLISHED -j ACCEPT
+  143  sudo iptables -A FORWARD -i enp0s8 -o enp0s3 -j ACCEPT
+  144  clear
+  145  sudo /sbin/iptables-save > /etc/iptables/rules.v4
+  146  sudo /sbin/iptables-save > /etc/sysconfig/iptables
+  147  sudo /sbin/iptables-save > /etc/iptables/rules.v4
+  148  ls /etc | grep ip
+  149  ls /etc/iproute2/
+  150  ls /sbin/iptables
+  151  cat /sbin/iptables
+  152  6cclear
+  153  clear
+  154  sudo iptables -S
+  155  iptables --list
+  156  history >> history.txt

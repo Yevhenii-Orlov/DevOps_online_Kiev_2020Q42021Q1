@@ -1,0 +1,68 @@
+    1  exit
+    2  clear
+    3  ifconfig
+    4  sudo cp /etc/netplan/00-installer-config.yaml /etc/netplan/00-installer-config.yaml.bak 
+    5  sudo nano /etc/netplan/00-installer-config.yaml
+    6  sudo netplan apply 
+    7  clear
+    8  ifconfig
+    9  sudo service netplan restart
+   10  sudo service network restart
+   11  sudo service networking restart
+   12  clear
+   13  sudo service show
+   14  sudo service --help
+   15  sudo service --status-all
+   16  ping 10.12.12.1
+   17  clear
+   18  ssh 10.12.12.1
+   19  clear
+   20  ping 192.168.88.135
+   21  clear
+   22  ping 192.168.88.135
+   23  sudo systemctl restart networking.service
+   24  ping google.com
+   25  clear
+   26  ifconfig
+   27  ssh 10.0.2.15
+   28  clear
+   29  ssh 10.0.2.15
+   30  clear
+   31  ssh 10.0.2.15
+   32  clear
+   33  ping 192.168.88.135
+   34  ping 192.168.88.1
+   35  ping google.com
+   36  ssh 10.0.2.15
+   37  ssh 10.12.12.1
+   38  clear
+   39  ifconfig
+   40  ping google.com
+   41  clear
+   42  shh 10.12.12.1
+   43  ssh 10.12.12.1
+   44  clear
+   45  route
+   46  ping 8.8.8.8
+   47  route
+   48  ifconfig
+   49  sudo /etc/init.d/networking restart
+   50  clear
+   51  sudo /etc/init.d/networking restart
+   52  reboot
+   53  clear
+   54  ifconfig
+   55  rout
+   56  route
+   57  clear
+   58  ip a
+   59  route
+   60  ping 192.168.88.135
+   61  clear
+   62  ping google.com
+   63  ping 8.8.8.8
+   64  clear
+   65  ping 8.8.8.8
+   66  ssh 192.168.88.135
+   67  history
+   68  history >> history.txt
