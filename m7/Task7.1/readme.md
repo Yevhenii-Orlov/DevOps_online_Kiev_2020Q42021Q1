@@ -45,4 +45,22 @@ In case of adding new or deleting old files, the script must add a corresponding
 indicating the time, type of operation and file name. [The command to run the script must be added to
 crontab with a run frequency of one minute]
 
-![](Screenshots/7.png) 
+Initial view of the folder:
+
+![](Screenshots/7.png)
+
+Executing a script:
+
+![](Screenshots/8.png)
+
+Creating and deleting files:
+
+![](Screenshots/9.png) 
+
+Resault:
+
+![](Screenshots/10.png) 
+
+Logbook.log file:
+
+![](Screenshots/11.png) 

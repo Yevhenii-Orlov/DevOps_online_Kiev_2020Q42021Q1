@@ -1,0 +1,33 @@
+#!/bin/bash
+
+#keys
+
+if [ $# -eq 0 ]
+
+then
+
+echo "--all - key displays the IP addresses and symbolic names of all hosts in the current subnet"
+echo "--target - key displays a list of open system TCP ports on this device" 
+
+else
+
+while [ -n "$1" ]
+
+do
+
+case "$1" in
+
+--all) nmap -sn 192.168.88.* | awk '/scan report for/ {$1=$2=$3=$4=""; print $0}' ;;
+
+--target) nmap -sT 192.168.88.135 | sed '1,5d' ;;
+
+*) echo "Please enter parametr!"
+echo "--all - key displays the IP addresses and symbolic names of all hosts in the current subnet"
+echo "--target - key displays a list of open system TCP ports on this device" ;;
+
+esac
+
+shift
+
+done
+fi

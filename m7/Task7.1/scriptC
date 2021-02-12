@@ -1,0 +1,39 @@
+#!/bin/bash
+
+#keys
+
+if [ $# -eq 0 ]
+
+then
+
+echo "Please enter parametr!"
+echo "First parametr is the path to the syncing directory"
+echo "Second parametr is the path to the directory where the copies" 
+
+else
+
+	for file in *;
+	
+	do 
+	
+	cp $file $2$file;
+	
+	done
+
+inotifywait -m $1 -e create -e delete |
+    
+	while read dir action file; do
+        
+		echo "`date` - - the file '$file' was '$action'" >> logbook.log
+				
+			if [ $action = "CREATE" ];
+			
+			then
+			
+			cp $file $2$file;
+			
+			fi
+			
+	done
+
+fi

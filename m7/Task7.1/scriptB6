@@ -1,0 +1,48 @@
+#!/bin/bash
+
+file='elog.log';
+
+let max=0;
+
+m=Mail.RU_Bot;
+g=Googlebot;
+mm=MJ12bot;
+s=SentiBot;
+a=AhrefsBot;
+
+for (( i=1; i <= 100; i++ ))
+
+do 
+
+ipbotm=`grep -i $m $file | awk '{print $1}' | head -n$i | tail -n1`
+
+imailbotm=`grep -i $m elog.log | sed 's/.*\(.*http\)/\1/g' | sed 's/".*//' | head -n$i | tail -n1 | awk -F[/:] '{print $4}'`
+
+echo "$m - $ipbotm - $imailbotm"
+
+ipbotg=`grep -i $g $file | awk '{print $1}' | head -n$i | tail -n1`
+
+imailbotg=`grep -i $g elog.log | sed 's/.*\(.*http\)/\1/g' | sed 's/".*//' | head -n$i | tail -n1 | awk -F[/:] '{print $4}'`
+
+echo "$g - $ipbotg - $imailbotg"
+
+ipbotmm=`grep -i $mm $file | awk '{print $1}' | head -n$i | tail -n1`
+
+imailbotmm=`grep -i $mm elog.log | sed 's/.*\(.*http\)/\1/g' | sed 's/".*//' | head -n$i | tail -n1 | awk -F[/:] '{print $4}'`
+
+echo "$mm - $ipbomm - $imailbotmm"
+
+ipbots=`grep -i $s $file | awk '{print $1}' | head -n$i | tail -n1`
+
+imailbots=`grep -i $s elog.log | sed 's/.*\(.*http\)/\1/g' | sed 's/".*//' | head -n$i | tail -n1 | awk -F[/:] '{print $4}'`
+
+echo "$s - $ipbots - $imailbots"
+
+ipbota=`grep -i $a $file | awk '{print $1}' | head -n$i | tail -n1`
+
+imailbota=`grep -i $a elog.log | sed 's/.*\(.*http\)/\1/g' | sed 's/".*//' | head -n$i | tail -n1 | awk -F[/:] '{print $4}'`
+
+echo "$a - $ipbota - $imailbota"
+
+done 
+
