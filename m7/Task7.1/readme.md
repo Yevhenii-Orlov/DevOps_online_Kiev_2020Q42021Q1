@@ -338,6 +338,14 @@ Logbook.log file:
 
 ![](Screenshots/11.png) 
 
+Add to crontab with a run frequency of one minute.
+
+![](Screenshots/13.png)
+
+Check result.
+
+![](Screenshots/12.png)
+
 ```bash
 #!/bin/bash
 
