@@ -120,4 +120,24 @@ while health != 0:
  
  ![](Screenshots/7.png)
   
- 3. 
+ 3. Developed a function for counting vowels in the input text.
+  
+ ![](Screenshots/8.png)
+ 
+ ```python
+ 
+ def Check_vowels(string, vowels):
+    final = [each for each in string if each in vowels]
+    print(len(final))
+    print(final)
+
+
+string = input("Please type the phrase: ")
+vowels = "AaEeIiOoUu"
+Check_vowels(string, vowels);
+ 
+ ```
+ 
+ - Result of test.
+ 
+ ![](Screenshots/9.png)
