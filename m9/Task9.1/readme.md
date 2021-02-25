@@ -19,7 +19,7 @@
         
  ```
  
- 2. FizzBizz test developed.
+ - FizzBizz test developed.
  
  ![](Screenshots/2.png)
  
@@ -67,10 +67,57 @@ for number in range(1, 101):
 
  ```
  
- 3. Result of test.
+ - Result of test.
   
  ![](Screenshots/3.png)
  
  ![](Screenshots/4.png)
-  
  
+ 2. The test for calculating the state of a geme unit after a hit and calculating residual health has been created.
+ 
+- Unit health file.
+
+ ![](Screenshots/5.png)
+ 
+ ```python
+ 
+ def unit(number):
+    if number < 100:
+        return "He is alive"
+    else:
+        return "He is died"
+ 
+ ```
+ 
+- Сharacter vitality test.
+ 
+ ![](Screenshots/6.png)
+ 
+ ```python
+ 
+import Unit
+import random
+
+def unit(number):
+    result = Unit.unit(number)
+
+    if result == "He is alive":
+        print("Hit", number, "The unit is alive, his health = ", 100 - number);
+    else:
+        print("Hit", number, "The unit is died");
+
+health = 1
+
+while health != 0:
+    number = random.randint(0,120)
+    unit(number)
+    if number >= 100:
+        health = 0;
+ 
+ ```
+ 
+- Result of test.
+ 
+ ![](Screenshots/7.png)
+  
+ 3. 
