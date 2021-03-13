@@ -12,16 +12,16 @@ orig = "Kiev"
 #to
 dest = "Minsk"
 
-    url = main_api + urllib.parse.urlencode({"key": key, "from": orig, "to": dest})
-    json_data = requests.get(url).json()
+url = main_api + urllib.parse.urlencode({"key": key, "from": orig, "to": dest})
+json_data = requests.get(url).json()
 
-    json_data = requests.get(url).json()
+json_data = requests.get(url).json()
 
-    json_status = json_data["info"]["statuscode"]
+json_status = json_data["info"]["statuscode"]
     
-    f = open('index.html','w')
+f = open('index.html','w')
 
-    message = """<html style="height: 100%;">
+message = """<html style="height: 100%;">
 	<style 
 		   lang="en" type="text/css" id="night-mode-pro-style">html {background-color: #FFFFFF !important;} body {background-color: #FFFFFF;}
 	</style>
@@ -38,11 +38,11 @@ dest = "Minsk"
 	</body>
 </html>"""
 
-    f.write(message)
-    f.close()
+f.write(message)
+f.close()
         
-    if json_status == 0:
-        #print("API Status: " + str(json_status))
+if json_status == 0:
+	#print("API Status: " + str(json_status))
         print (url)
         print("Trip      : " + (orig) + " to " + (dest))
         print("Duration  : " + (json_data["route"]["formattedTime"]))
@@ -54,7 +54,7 @@ dest = "Minsk"
         for each in json_data["route"]["legs"][0]["maneuvers"]:
             print((each["narrative"]) + " (" + str("{:.2f}".format((each["distance"])*1.61) + ") " + "km"))
             print("=====================================================================")
-    else:
+else:
         print("Запрос не удался. Попробуйте снова!")
 
 
