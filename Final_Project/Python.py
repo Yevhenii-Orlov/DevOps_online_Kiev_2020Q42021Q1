@@ -6,13 +6,11 @@ main_api = "http://www.mapquestapi.com/directions/v2/route?"
 #key
 key = "F8zn5GJu5M8QijBZJyE8l906IrADG7pB"
 
+#from
+orig = "Kiev"
 
-while True:
-    orig = input("Start Location: ")
-    if orig == "q" or orig == "quit":
-        break 
-    dest = input("Finish Location: ")
-
+#to
+dest = "Minsk"
 
     url = main_api + urllib.parse.urlencode({"key": key, "from": orig, "to": dest})
     json_data = requests.get(url).json()
