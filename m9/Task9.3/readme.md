@@ -74,7 +74,7 @@ EXPOSE 5000
 CMD ["python", "/usr/src/app/app.py"]
 ```
   
-  4. "Dockerfile" file contains:
+  4. "index.html" file contains:
   
 ```html
   <html>
