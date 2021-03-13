@@ -10,7 +10,7 @@ key = "F8zn5GJu5M8QijBZJyE8l906IrADG7pB"
 orig = "Kiev"
 
 #to
-dest = "Riga"
+dest = "Warsaw"
 
 url = main_api + urllib.parse.urlencode({"key": key, "from": orig, "to": dest})
 json_data = requests.get(url).json()
@@ -34,7 +34,7 @@ message = """<html style="height: 100%;">
 	
 	<body style="margin: 0px; background: #0e0e0e; height: 100%">
 		<img style="-webkit-user-select: none;margin: auto;cursor: zoom-in;background-color: hsl(0, 0%, 100%);transition: background-color 300ms;" 
-			 src="https://www.mapquestapi.com/staticmap/v5/map?key=F8zn5GJu5M8QijBZJyE8l906IrADG7pB&amp;start=""" + orig + """|flag-start&amp;end=""" + dest + """|flag-end&amp;scalebar=true|bottom&amp;size=1920,1080@2x&amp;banner=From+""" + orig + """+To+""" + dest + """|sm-rigth-562C22-EEDFD8" width="1920" height="1080">
+			 src="https://www.mapquestapi.com/staticmap/v5/map?key=F8zn5GJu5M8QijBZJyE8l906IrADG7pB&amp;start=""" + orig + """|flag-start&amp;end=""" + dest + """|flag-end&amp;scalebar=true|bottom&amp;size=1920,1260@2x&amp;banner=From+""" + orig + """+To+""" + dest + """|sm-rigth-562C22-EEDFD8" width="1920" height="1260">
 	</body>
 </html>"""
 
