@@ -55,4 +55,4 @@ if json_status == 0:
             print((each["narrative"]) + " (" + str("{:.2f}".format((each["distance"])*1.61) + ") " + "km"))
             print("=====================================================================")
 else:
-        print("The request failed. Try it again!")
+        print("The request failed. Try it again!)")
