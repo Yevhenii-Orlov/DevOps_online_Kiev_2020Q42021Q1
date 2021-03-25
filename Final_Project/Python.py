@@ -10,7 +10,7 @@ key = "F8zn5GJu5M8QijBZJyE8l906IrADG7pB"
 orig = "Kiev"
 
 #to
-dest = "Berlin"
+dest = "Vienna"
 
 url = main_api + urllib.parse.urlencode({"key": key, "from": orig, "to": dest})
 json_data = requests.get(url).json()
