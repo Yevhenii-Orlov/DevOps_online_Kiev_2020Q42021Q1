@@ -1,0 +1,9 @@
+---
+image_name: Apache
+image: httpd
+port: 7070
+docker_dir: /usr/ansible/index.html
+src_dir: /var/lib/jenkins/workspace/Import_Apache/Final_Project/index.html
+dest_dir: /usr/ansible/index.html
+disable_default: true
+

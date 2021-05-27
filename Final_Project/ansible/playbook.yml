@@ -1,0 +1,42 @@
+---
+- hosts: all
+  become: true
+  vars_files:
+    - vars/default.yml
+
+  tasks:
+    - name: Install system packages
+      apt: name={{ item }} state=latest update_cache=yes
+      loop: [ 'python3-pip', 'python3-setuptools']
+
+    - name: Install Docker Module for Python
+      pip:
+        name: docker
+ 
+    - name: Pull default Docker image
+      docker_image:
+        name: "{{ image }}"
+        source: pull
+   
+    - name: Create default containers
+      docker_container:
+        name: "{{ image_name }}"
+        image: "{{ image }}"
+        exposed_ports:
+        - '80'
+        ports:
+        - "{{ port }}:80"
+        state: started
+     
+    - name: Create directory 
+      file:
+        path: /usr/ansible
+        state: directory
+
+    - name: Copy web file
+      copy: 
+        src : "{{ src_dir }}"
+        dest : "{{ dest_dir }}"
+
+    - name: Copy web file in container
+      shell: docker cp {{ docker_dir }} {{ image_name }}:/usr/local/apache2/htdocs/
